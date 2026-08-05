@@ -1,0 +1,444 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active"><i class="fa-solid fa-house"></i><span class="tooltip">Home</span></li>
+            <li><i class="fa-solid fa-user"></i><span class="tooltip">About</span></li>
+            <li><i class="fa-solid fa-comment"></i><span class="tooltip">Resume</span></li>
+            <li><i class="fa-solid fa-briefcase"></i><span class="tooltip">Portfolio</span></li>
+            <li><i class="fa-solid fa-envelope"></i><span class="tooltip">Contact</span></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <!-- home section -->
+            <section class="section home active">
+                <div class="home-info">
+                    <h3>Hello I'm</h3>
+                    <h1>Ebelechukwu Paul</h1>
+                    <h3>Fullstack Developer</h3>
+                    <p class="desc">I am a passionate Python and Django developer focused on building clean, responsive,
+                        and user-friendly web applications. I enjoy turning ideas into real digital products and have
+                        hands-on experience developing full-stack projects, including a Hostel Management System. I am
+                        continuously improving my skills in Django, JavaScript, PostgreSQL, and modern web technologies,
+                        and I'm always excited to take on new challenges and opportunities.</p>
+                    <div class="btn-sci">
+                        <a href="#" class="btn">Download CV</a>
+                        <div class="sci">
+                            <a href="https://www.facebook.com/Ebelechukwu Paul"><i
+                                    class="fa-brands fa-facebook"></i><span class="tooltip">Facebook</span></a>
+                            <a href="https://www.linkedin.com/in/your-linkedin-username/"><i
+                                    class="fa-brands fa-linkedin"></i><span class="tooltip">Linkedin</span></a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="{% static 'images/home2.png' %}" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- About section -->
+            <section class="section about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="{% static 'images/home2.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h2 class="title">About Me</h2>
+                    <h3>Fullstack Developer</h3>
+                    <p class="desc">I am a dedicated Python and Django developer with a strong interest in building
+                        practical and user-focused web applications. My journey in software development began with
+                        learning HTML, CSS, and JavaScript, and it has grown into developing full-stack projects using
+                        Django and PostgreSQL. I recently completed a comprehensive Hostel Management System, which
+                        strengthened my experience in backend development, database design, authentication, and
+                        deployment workflows. As a diploma student at Jobitech Institute of Technology, I am committed
+                        to continuous learning and enjoy solving real-world problems through clean, efficient, and
+                        scalable code. My goal is to contribute to meaningful projects while growing as a professional
+                        software developer.</p>
+                </div>
+            </section>
+            <!-- Resume -->
+            <section class="section resume">
+                <h2 class="title">Resume</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list active">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="tab-list resume-list">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="tab-grid  resume-box  experience  active">
+                        <div class="tab-item resume-item">
+                            <h4>2024-Present</h4>
+                            <h4>Frontend Developer</h4>
+                            <h4>Online courses</h4>
+                            <P>Building full-stack web applications using Python, HTML, CSS, and JavaScript, with a
+                                focus on responsive design.</P>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-2025</h4>
+                            <h4> Full Stack Developer</h4>
+                            <h4>Udemy</h4>
+                            <P>Learned and applied HTML, CSS, and JavaScript by creating responsive websites,
+                                interactive user interfaces, and portfolio projects while developing strong
+                                problem-solving skills.</P>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2025-2026</h4>
+                            <h4> Backend Developer</h4>
+                            <h4>Django</h4>
+                            <P>Developed the backend of a Hostel Management System using Django and PostgreSQL,
+                                implementing user authentication, room allocation, booking management, file handling,
+                                and administrative features.</P>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2025-2026</h4>
+                            <h4> Fullstack Developer intern</h4>
+                            <P>Received practical training in web development fundamentals, programming concepts,
+                                database management, and software development practices through hands-on academic
+                                projects.</P>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <h4>2025-2026</h4>
+                            <h4> senior Developer</h4>
+                            <P>Integrated frontend and backend technologies to build complete web applications, working
+                                with Django templates, static files, PostgreSQL, Cloudinary, and deployment tools</P>
+
+                        </div>
+                    </div>
+                    <div class="tab-grid  resume-box skills">
+                        <div class="tab-item resume-item">
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-brands fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-server"></i>
+                            <p>Django</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-code"></i>
+                            <p>C++</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <p>Flutter</p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-php"></i>
+                            <p>PHP</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-python"></i>
+                            <p>Python</p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-flask"></i>
+                            <p>Flask</p>
+                        </div>
+
+                        <div class="tab-item resume-item">
+                            <i class="fa-solid fa-postgresql"></i>
+                            <p>PostgreSQL</p>
+                        </div>
+
+                    </div>
+                    <div class="tab-grid resume-box  eduction">
+                        <div class="tab-item resume-item">
+                            <h4>2024</h4>
+                            <h4>Programming Course</h4>
+                            <h4>Online Course</h4>
+                            <p>Started my journey in web development by learning HTML, CSS, and the fundamentals of
+                                building responsive websites and user interfaces.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024</h4>
+                            <h4>Programming Course</h4>
+                            <h4>Online Course</h4>
+                            <p>Developed a strong foundation in programming logic, problem-solving, algorithms, and
+                                basic software development principles.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-2025</h4>
+                            <h4>Web Development Bootcamp</h4>
+                            <h4>Online Course Platform</h4>
+                            <p>Studied web development, database management, networking, programming, and software
+                                engineering through practical and project-based learning.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-2025</h4>
+                            <h4>Freelancer</h4>
+                            <h4>Online Course</h4>
+                            <p>Expanded my frontend skills by building interactive websites and improving
+                                responsiveness, animations, and user experience.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024</h4>
+                            <h4>Technical Training</h4>
+                            <h4>Jobitech</h4>
+                            <p>Focused on backend development with Python and Django, including authentication,
+                                templates, database integration, and deployment concepts.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2025-2026</h4>
+                            <h4>Software Developer</h4>
+                            <h4>Jobitech</h4>
+                            <p>Designed and developed a full-stack Hostel Management System using Django and PostgreSQL,
+                                applying real-world software development practices and project documentation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio section -->
+            <section class="section portfolio">
+                <h2 class="title">Portfolio</h2>
+                <div class="tab-box">
+                    <div class="tab-list portfolio-list active">
+                        <h3>My Works</h3>
+                    </div>
+                    <div class="tab-list portfolio-list">
+                        <h3>My Service</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="tab-grid portfolio-box work active">
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/work1.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Frontend Project</h4>
+                                <p>A modern responsive portfolio website showcasing my skills, projects, and experience
+                                    with smooth animations and interactive sections.</p>
+                                <div class="tech-used">
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                </div>
+
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/home img.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Full Stack Project</h4>
+                                <p>A full-stack web application for hostel room allocation, student management, booking,
+                                    authentication, and administrative operations.</p>
+                                <div class="tech-used">
+                                    <p>html, css, javascrit, Django</p>
+                                </div>
+
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="https://github.com/zinnocent2025-lang/-Hostel-Management-System"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/work3.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Frontend Project</h4>
+                                <p>An interactive 3D portfolio interface featuring animated navigation, responsive
+                                    layouts, and engaging visual transitions.</p>
+                                <div class="tech-used">
+                                    <p>javascript, css, html</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/work4.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Frontend Project</h4>
+                                <p>A clean and mobile-friendly landing page designed with responsive layouts, smooth
+                                    scrolling, and modern UI components.</p>
+                                <div class="tech-used">
+                                    <p>HTML5, JavaScript</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/work5.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Frontend Project</h4>
+                                <p>A collection of reusable interface components and interactive elements built to
+                                    improve usability and frontend performance.</p>
+                                <div class="tech-used">
+                                    <p>html, css</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="work-img">
+                                <img src="{% static 'images/work6.jpg' %}" alt="">
+                            </div>
+                            <div class="work-info">
+                                <h4>Full Stack Project</h4>
+                                <p>A Django-powered application for managing student records, authentication, and
+                                    administrative workflows with a structured backend architecture.</p>
+                                <div class="tech-used">
+                                    <p>js, css, django</p>
+                                </div>
+                                <div class="portfolio-icon work-icon">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                        <span class="tooltip">Preview</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                        <span class="tooltip">Github Repositry</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-grid portfolio-box service">
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class="fa-solid fa-code icon"></i>
+                                <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                            <h4>Web Development</h4>
+                            <p>I build responsive and user-friendly websites using HTML, CSS, JavaScript, and Django,
+                                with clean code and modern design principles.</p>
+                        </div>
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class="fa-solid fa-palette icon"></i>
+                                <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                            <h4>Graphic Design</h4>
+                            <p>I design clean and engaging graphics, social media visuals, posters, and branding
+                                materials using tools such as CorelDRAW, Canva, and Photopea.</p>
+                        </div>
+
+
+                        <div class="tab-item portfolio-item">
+                            <div class="portfolio-icon service-icon">
+                                <i class="fa-solid fa-slideshow icon"></i>
+                                <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                            </div>
+                            <h4>Video Editing</h4>
+                            <p>I create and edit professional video content with smooth transitions, audio
+                                synchronization, subtitles, and optimized formats for social media and web platforms.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- Contact section -->
+            <section class="section contact active">
+                <h2 class="title">Contact</h2>
+                <div class="contact-wrapper">
+                    <form method="POST" class="contact-form">
+                        {% csrf_token %}
+                        <h3>Let's Work Together!</h3>
+
+                        <div class="field-box">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="text" name="phone" placeholder="Phone Number" required>
+                            <input type="text" name="subject" placeholder="Email Subject" required>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+
+                        <div class="contact-btn">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
